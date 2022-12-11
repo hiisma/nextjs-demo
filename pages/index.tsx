@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import NavBar from './NavBar'
 
 export default function Home() {
   return (
@@ -11,12 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
-        <nav className='flex flex-row h-16 bg-gray-900 text-gray-200 justify-center items-center'>
-          <a>Option 1</a>
-          <a>Option 2</a>
-          <a>Option 3</a>
-          <a>Option 4</a>
-        </nav>
+        <NavBar />
       </body>
     </div>
   )
