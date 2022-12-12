@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import NavBar from '../components/NavBar'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -10,19 +11,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
-      <main className='text-gray-100'>
-        <div className='text-4xl text-center bg-gradient-to-t from-gray-900 to-gray-800 h-16'></div>
+      <main className='text-gray-100 p-4'>
 
-        <h1 className='text-7xl text-center mt-6'>
-          Welcome
-        </h1>
-
-        <div id="graphics" className='flex flex-col p-8'>
-          <div className='bg-white rounded-full h-10 w-10 self-end'></div>
-          <div className='bg-white rounded-full h-10 w-10 self-center'></div>
-          <div className='bg-white rounded-full h-10 w-10'></div>
+        <div className='flex flex-row items-center justify-center text- w-72'>
+          <div className='flex flex-col flex-1 w-40'>
+            <h1 className='text-7xl'>
+              Welcome
+            </h1>
+            <p className='text-2xl'>This is an example web site that uses NextJs. Here you will find real time data of 4 different cryptocurrencies.</p>
+          </div>
         </div>
       </main>
     </div>
   )
+}
+
+const load = () => {
+
 }
